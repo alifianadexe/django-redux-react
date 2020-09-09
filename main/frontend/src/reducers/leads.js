@@ -9,9 +9,9 @@ export default function (state = initialState, action) {
     case GET_LEADS:
       return {
         ...state,
-        leads = action.payload
+        leads: action.payload,
       };
     default:
-        return state; 
+      return state;
   }
 }
